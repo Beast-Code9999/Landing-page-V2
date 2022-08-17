@@ -24,3 +24,9 @@ body {
     line-height: 1.5;
     color: #777;
 }
+
+.header {
+    height: 95vh;
+    background-image: url(./img/circle-g7f3709873_1280.jpg);
+    background-size: cover;
+}
