@@ -51,6 +51,28 @@ body {
     height: 75px;
 }
 
+.logo:hover {
+    /* transition: all 1s ease-in-out;
+    transform: rotate(360deg); */
+    animation: rotateLogo 1s ease-in-out;
+}
+
+/* rotating logo */
+@keyframes rotateLogo {
+    0% {
+        opacity: 1;
+    }
+    80% {
+        transform: rotate(380deg);
+        opacity: .6;
+    }
+    
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
 .text-box {
     position: absolute;
     top: 40%;
@@ -62,7 +84,7 @@ body {
     color: #fff;
     text-transform: uppercase;
     text-align: center;
-    
+
     /* set backspace visibility to hidden to avoid stuttering during animation in children elements*/
     backface-visibility: hidden;
 }
