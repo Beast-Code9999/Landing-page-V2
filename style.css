@@ -38,4 +38,20 @@ body {
     
     /* clip the background image */
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    position: relative;
 }
+
+.logo-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.logo {
+    height: 35px;
+}
+
+
+
+
+
