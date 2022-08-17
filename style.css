@@ -23,10 +23,17 @@ body {
     font-size: 1rem;
     line-height: 1.5;
     color: #777;
+    padding: 30px;
 }
 
 .header {
     height: 95vh;
-    background-image: url(./img/circle-g7f3709873_1280.jpg);
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(85, 179, 241, 0.801),
+        rgba(0, 119, 198, 0.801)),
+        url(./img/circle-g7f3709873_1280.jpg);
     background-size: cover;
+    background-position: top;
+    
 }
