@@ -48,7 +48,7 @@ body {
 }
 
 .logo {
-    height: 35px;
+    height: 75px;
 }
 
 .text-box {
@@ -62,6 +62,9 @@ body {
     color: #fff;
     text-transform: uppercase;
     text-align: center;
+    
+    /* set backspace visibility to hidden to avoid stuttering during animation in children elements*/
+    backface-visibility: hidden;
 }
 
 .heading-primary-main {
@@ -69,6 +72,12 @@ body {
     font-size: 50px;
     font-weight: 500;
     letter-spacing: 30px;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    /* animation-delay: 2s
+        animation-count: 2;
+     */
 }
 
 .heading-primary-sub {
@@ -76,5 +85,42 @@ body {
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 10px;
+    /* animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; */
+    animation: moveInRight 1s ease-out;
 }
 
+/* animations on headings */
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(20px);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translate(100px);
+    }
+
+    80% {
+        transform: translate(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
