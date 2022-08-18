@@ -160,7 +160,6 @@ body {
     border-radius: 50px;
     transition: all .1s;
     position: relative;
-    animation: moveUp 1s ease-out;
 }
 
 .btn:hover {
@@ -204,12 +203,18 @@ body {
 @keyframes moveUp {
     0% {
         transform: translateY(100px);
+        opacity: 0;
     }
     80% {
         transform: translateY(-20px);
     }
     100% {
         transform: translateY(0);
+        opacity: 1;
     }
 }
 
+.btn-animated {
+    animation: moveUp 1s ease-out 1.5s;
+    animation-fill-mode: backwards;
+}
