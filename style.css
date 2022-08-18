@@ -16,6 +16,7 @@ dark color: #0076c6
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 body {
@@ -89,7 +90,7 @@ body {
 
     /* set backspace visibility to hidden to avoid stuttering during animation in children elements*/
     backface-visibility: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .heading-primary-main {
@@ -158,6 +159,8 @@ body {
     display: inline-block;
     border-radius: 50px;
     transition: all .1s;
+    position: relative;
+    animation: moveUp 1s ease-out;
 }
 
 .btn:hover {
@@ -175,7 +178,38 @@ body {
     color: #777;
 }
 
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .2s;
+}
 
+.btn-white::after {
+    background-color: #fff;
+}
 
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
 
+/* moveup button animation */
+@keyframes moveUp {
+    0% {
+        transform: translateY(100px);
+    }
+    80% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
 
