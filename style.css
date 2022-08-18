@@ -89,6 +89,7 @@ body {
 
     /* set backspace visibility to hidden to avoid stuttering during animation in children elements*/
     backface-visibility: hidden;
+    margin-bottom: 20px;
 }
 
 .heading-primary-main {
@@ -161,10 +162,12 @@ body {
 
 .btn:hover {
     transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
 }
 
 .btn:active {
     transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .15);
 }
 
 .btn-white {
