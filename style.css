@@ -12,15 +12,17 @@ dark color: #0076c6
 
 }
 
-* {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     user-select: none;
+    box-sizing: inherit;
 }
 
 html {
-    font-size: 10px;
+    font-size: 62.5%;
 }
 
 body {
@@ -30,6 +32,7 @@ body {
     line-height: 1.5;
     color: #777;
     padding: 3rem;
+    box-sizing: border-box;
 }
 
 .header {
@@ -159,11 +162,13 @@ body {
 .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 1rem 1.5rem;
+    padding: 2rem 4rem;
     display: inline-block;
     border-radius: 50px;
     transition: all .1s;
     position: relative;
+    font-size: 2rem;
+
 }
 
 .btn:hover {
