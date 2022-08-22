@@ -1,0 +1,47 @@
+.row {
+    max-width: $grid-width;
+    background-color: blue;
+    margin: 0 auto;
+    // select everything except the last child using not() pseudo class
+    &:not(:last-child) {
+        margin-bottom: $gap-horizontal;
+    }
+    
+    //use attribute selector to select all classes that start with "col-"
+    [class^="col-"] {
+        background-color: yellow;
+        float: left;
+        &:not(:last-child) {
+            margin-right: $gap-horizontal;
+        }
+    }
+
+    @include clearfix;
+    
+    .col-1-of-2 {
+        //to use sass variable in a css function you need #{}
+        width: calc((100% - #{$gap-horizontal}) / 2);
+    }
+
+    .col-1-of-3 {
+        width: calc((100% - (2 * #{$gap-horizontal})) / 3);
+
+    }
+
+    .col-2-of-3 {
+        width: calc(2 * ((100% - (2 * #{$gap-horizontal})) / 3) + #{$gap-horizontal});
+    }
+
+    .col-1-of-4 {
+        width: calc((100% - (3 * #{$gap-horizontal})) / 4);
+    }
+
+    .col-2-of-4 {
+        width: calc(2 * (100% - (3 * #{$gap-horizontal})) / 4 + #{$gap-horizontal});
+    }
+
+    .col-3-of-4 {
+        width: calc((3 * ((100% - (3 * #{$gap-horizontal})) / 4)) + (2 * #{$gap-horizontal}));
+    }
+
+} 

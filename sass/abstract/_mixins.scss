@@ -1,0 +1,8 @@
+// use to fix collapsing and stuttering of elements
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
