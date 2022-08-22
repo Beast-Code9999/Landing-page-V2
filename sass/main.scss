@@ -1,16 +1,10 @@
-/* 
-colors
+// color 
+$color-primary: #1d8fdb;
+$color-primary-light:  #55b3f1;
+$color-primary-dark: #0076c6;
 
-light color: #55b3f1
-medium color: #1d8fdb
-dark color: #0076c6
+$color-gray-dark: #777;
 
-*/
-
-
-:root {
-
-}
 
 *,
 *::after,
@@ -30,7 +24,7 @@ body {
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.5;
-    color: #777;
+    color: $color-gray-dark;
     padding: 3rem;
     box-sizing: border-box;
 }
@@ -39,8 +33,8 @@ body {
     height: 95vh;
     background-image: linear-gradient(
         to right bottom,
-        rgba(85, 179, 241, 0.801),
-        rgba(0, 119, 198, 0.801)),
+        rgba($color-primary-light, 0.801),
+        rgba($color-primary-dark, 0.801)),
         url(./img/circle-g7f3709873_1280.jpg);
     background-size: cover;
     background-position: top;
@@ -183,7 +177,7 @@ body {
 
 .btn--white {
     background-color: #fff;
-    color: #777;
+    color: $color-gray-dark;
 }
 
 .btn::after {
