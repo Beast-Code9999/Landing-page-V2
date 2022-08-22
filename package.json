@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/Beast-Code9999/Landing-page-V2/issues"
   },
-  "homepage": "https://github.com/Beast-Code9999/Landing-page-V2#readme"
+  "homepage": "https://github.com/Beast-Code9999/Landing-page-V2#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "sass-graph": "^4.0.0",
+    "scss-tokenizer": "^0.4.3"
+  }
 }
