@@ -26,19 +26,16 @@ body {
   /* clip the background image */
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }
-
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem; }
-
-.header__logo {
-  height: 7.5rem; }
-
-.header__logo:hover {
-  /* transition: all 1s ease-in-out;
-    transform: rotate(360deg); */
-  animation: rotateLogo 1s ease-in-out; }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    height: 7.5rem; }
+  .header__logo:hover {
+    /* transition: all 1s ease-in-out;
+        transform: rotate(360deg); */
+    animation: rotateLogo 1s ease-in-out; }
 
 /* rotating logo */
 @keyframes rotateLogo {
@@ -65,28 +62,26 @@ body {
   /* set backspace visibility to hidden to avoid stuttering during animation in children elements*/
   backface-visibility: hidden;
   margin-bottom: 3rem; }
-
-.heading-primary--main {
-  display: block;
-  font-size: 5rem;
-  font-weight: 500;
-  letter-spacing: 3rem;
-  animation-name: moveInLeft;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  /* animation-delay: 2s
-        animation-count: 2;
-     */ }
-
-.heading-primary--sub {
-  display: block;
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 1rem;
-  /* animation-name: moveInRight;
+  .heading-primary--main {
+    display: block;
+    font-size: 5rem;
+    font-weight: 500;
+    letter-spacing: 3rem;
+    animation-name: moveInLeft;
     animation-duration: 1s;
-    animation-timing-function: ease-out; */
-  animation: moveInRight 1s ease-out; }
+    animation-timing-function: ease-out;
+    /* animation-delay: 2s
+            animation-count: 2;
+         */ }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    /* animation-name: moveInRight;
+        animation-duration: 1s;
+        animation-timing-function: ease-out; */
+    animation: moveInRight 1s ease-out; }
 
 /* animations on headings */
 @keyframes moveInLeft {
@@ -109,8 +104,7 @@ body {
     opacity: 1;
     transform: translate(0); } }
 
-.btn:link,
-.btn:visited {
+.btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 2rem 4rem;
@@ -151,6 +145,10 @@ body {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0; }
 
+.btn--animated {
+  animation: moveUp 1s ease-out 1.5s;
+  animation-fill-mode: backwards; }
+
 /* moveup button animation */
 @keyframes moveUp {
   0% {
@@ -161,7 +159,3 @@ body {
   100% {
     transform: translateY(0);
     opacity: 1; } }
-
-.btn--animated {
-  animation: moveUp 1s ease-out 1.5s;
-  animation-fill-mode: backwards; }
