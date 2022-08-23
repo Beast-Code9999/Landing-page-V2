@@ -60,5 +60,16 @@ body {
 }
 
 .heading-tertiary {
-    
+    font-size: 1.6rem; //16 pixels in our case
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+
+.paragraph {
+    font-size: 1.6rem;
+
+    &:not(:last-child) {
+        margin-bottom: 4rem;
+    }
 }
