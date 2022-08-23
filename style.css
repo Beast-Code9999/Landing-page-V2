@@ -209,7 +209,7 @@ body {
       top: 10rem; }
     .composition__photo:hover {
       outline: 1rem solid #0076c6;
-      transform: scale(1.1) translateY(-5rem);
+      transform: scale(1.1) translateY(-0.5rem);
       box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
       z-index: 1; }
   .composition:hover .composition__photo:not(:hover) {
