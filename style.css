@@ -91,6 +91,26 @@ body {
         animation-timing-function: ease-out; */
     animation: moveInRight 1s ease-out; }
 
+.heading-secondary {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #55b3f1, #0076c6);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 1px;
+  transition: all .3s; }
+  .heading-secondary:hover {
+    transform: skewY(6deg) skewX(20deg) scale(1.1);
+    text-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2); }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-8 {
+  margin-bottom: 8rem; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -136,12 +156,10 @@ body {
 
 .row {
   max-width: 114rem;
-  background-color: blue;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
   .row [class^="col-"] {
-    background-color: yellow;
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 8rem; }
@@ -186,3 +204,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh; }

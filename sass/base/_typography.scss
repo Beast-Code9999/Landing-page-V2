@@ -41,3 +41,20 @@ body {
         animation: moveInRight 1s ease-out;
     }
 }
+
+.heading-secondary {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #{$color-primary-light}, #{$color-primary-dark});
+    display:inline-block;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 1px;
+    transition: all .3s;
+
+    &:hover {
+        transform: skewY(6deg) skewX(20deg) scale(1.1);
+        text-shadow: 1rem 1rem 1rem rgba($color: #000000, $alpha: .2) 
+    }
+}

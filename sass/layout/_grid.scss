@@ -1,6 +1,5 @@
 .row {
     max-width: $grid-width;
-    background-color: blue;
     margin: 0 auto;
     // select everything except the last child using not() pseudo class
     &:not(:last-child) {
@@ -9,7 +8,6 @@
     
     //use attribute selector to select all classes that start with "col-"
     [class^="col-"] {
-        background-color: yellow;
         float: left;
         &:not(:last-child) {
             margin-right: $gap-horizontal;
