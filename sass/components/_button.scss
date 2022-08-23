@@ -54,7 +54,7 @@
 }
 
 .btn-text {
-    transition: all 1s;
+    transition: all .3s;
     &:link,
     &:visited {
         color: $color-primary;
@@ -66,13 +66,16 @@
     }
 
     &:hover {
-        background-color: $color-primary;
+        background-color: $color-primary-light;
         color: white;
-        border-radius: 1rem;
-        box-shadow: 1rem 1rem 1rem $color-gray-dark
+        border-radius: .5rem;
+        box-shadow: .5rem .5rem 2rem rgba($color: #000000, $alpha: .3);
+        transform: translateY(-2px);
+        
     }
 
     &:active {
-
+        box-shadow: .25rem .25rem 1rem rgba($color: #000000, $alpha: .3);
+        transform: translateY(0);
     }
 }

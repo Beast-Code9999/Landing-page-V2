@@ -171,7 +171,7 @@ body {
   animation-fill-mode: backwards; }
 
 .btn-text {
-  transition: all 1s; }
+  transition: all .3s; }
   .btn-text:link, .btn-text:visited {
     color: #1d8fdb;
     display: inline-block;
@@ -180,10 +180,14 @@ body {
     font-size: 1.6rem;
     padding: 5px; }
   .btn-text:hover {
-    background-color: #1d8fdb;
+    background-color: #55b3f1;
     color: white;
-    border-radius: 1rem;
-    box-shadow: 1rem 1rem 1rem #777; }
+    border-radius: .5rem;
+    box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px); }
+  .btn-text:active {
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.3);
+    transform: translateY(0); }
 
 .row {
   max-width: 114rem;
