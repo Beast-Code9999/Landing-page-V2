@@ -13,5 +13,10 @@
         rgba($color-primary-dark, 0.801)),
     url(/img/pattern-gd17f63c16_1280.jpg);
     background-size: cover;
+    margin-top: -10rem;
+    transform: skewY(-7deg);
 
+    & > * {
+        transform: skewY(7deg);
+    }
 } 

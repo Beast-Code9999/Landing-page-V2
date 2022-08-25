@@ -218,10 +218,11 @@ body {
 .feature-box {
   background-color: rgba(255, 255, 255, 0.7);
   font-size: 1.5rem;
+  padding: 3rem;
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
-  transition: all .2s; }
+  transition: transform .2s; }
   .feature-box:hover {
     transform: translateY(-2rem) scale(1.05); }
   .feature-box__icon {
@@ -292,4 +293,8 @@ body {
 .section-features {
   padding: 25rem 0;
   background-image: linear-gradient(to right bottom, rgba(85, 179, 241, 0.801), rgba(0, 118, 198, 0.801)), url(/img/pattern-gd17f63c16_1280.jpg);
-  background-size: cover; }
+  background-size: cover;
+  margin-top: -10rem;
+  transform: skewY(-7deg); }
+  .section-features > * {
+    transform: skewY(7deg); }
