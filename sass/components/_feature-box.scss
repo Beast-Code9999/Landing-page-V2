@@ -5,7 +5,7 @@
     text-align: center;
     border-radius: 3px;
     box-shadow: 0 2rem 4rem rgba($color: #000000, $alpha: .2);
-    transition: transform .2s;
+    transition: transform .1s;
     
     &:hover {
         transform: translateY(-2rem) scale(1.05);
