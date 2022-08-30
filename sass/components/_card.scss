@@ -2,17 +2,44 @@
     // add perspective
     perspective: 150rem;
     -moz-perspective: 150rem;
+    position: relative;
+    // re-declared height
+    height: 50rem;
+    // due to .card__side--front & back position: absolute, the parent div (&__side) 
+    // height collapsed as a result of the two being taken out of the normal flow of css
+    // so the height must be re-declared on &__side parent element, this element
 
     &__side {
         background-color: orangered;
         height: 50rem;
-        transition: all .5s;
+        transition: all .8s ease;
+        color: white;
+        font-size: 3rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        // add width due to position absolute 
+        width: 100%;
+        backface-visibility: hidden;
+
+        &--front {
+            background-color: #fff;
+
+        }
+
+        &--back {
+            background-color: green;
+            transform: rotateY(180deg);
+        }
     }
     
 
 
-    &:hover &__side{
+    &:hover &__side--front {
         transform: rotateY(180deg);
+    }
 
+    &:hover &__side--back {
+        transform: rotateY(0);
     }
 }
