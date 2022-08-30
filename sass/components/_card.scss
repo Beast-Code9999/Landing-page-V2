@@ -1,4 +1,5 @@
-.card {
+.card { // FUNCTIONALITY
+
     // add perspective
     perspective: 150rem;
     -moz-perspective: 150rem;
@@ -12,15 +13,17 @@
     &__side {
         background-color: orangered;
         height: 50rem;
-        transition: all .8s ease;
         color: white;
         font-size: 3rem;
+        transition: all .8s ease;
         position: absolute;
         top: 0;
         left: 0;
         // add width due to position absolute 
         width: 100%;
         backface-visibility: hidden;
+        border-radius: 5px;
+        box-shadow: 0 1.5rem 4rem rgba($color: #000000, $alpha: .15);
 
         &--front {
             background-color: #fff;
@@ -30,16 +33,30 @@
         &--back {
             background-color: green;
             transform: rotateY(180deg);
+
+            &-1 {
+                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+            }
         }
     }
     
-
-
     &:hover &__side--front {
-        transform: rotateY(180deg);
+        transform: rotateY(-180deg);
     }
 
     &:hover &__side--back {
         transform: rotateY(0);
+    }
+
+
+    // FRONT SIDE STYLING
+    &__picture {
+        background-size: cover;
+        height: 25rem;
+        background-blend-mode: screen;
+        
+        &--1 {
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark) ,url(/img/rene-bohmer-YeUVDKZWSZ4-unsplash.jpg);
+        }
     }
 }
