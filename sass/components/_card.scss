@@ -13,7 +13,7 @@
     &__side {
         background-color: orangered;
         height: 50rem;
-        color: white;
+        // color: white;
         font-size: 3rem;
         transition: all .8s ease;
         position: absolute;
@@ -51,15 +51,24 @@
     }
 
 
-    // FRONT SIDE STYLING
+    // FRONT SIDE STYLING OF CARD
     &__picture {
         background-size: cover;
         height: 25rem;
         background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         
         &--1 {
             background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark) ,url(/img/pexels-pixabay-414579.jpg);
         }
+    }
+
+    &__heading {
+        font-size: 3rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: white;
+
     }
 }

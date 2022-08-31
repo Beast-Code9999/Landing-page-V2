@@ -197,7 +197,6 @@ body {
   .card__side {
     background-color: orangered;
     height: 50rem;
-    color: white;
     font-size: 3rem;
     transition: all .8s ease;
     position: absolute;
@@ -223,9 +222,15 @@ body {
     background-size: cover;
     height: 25rem;
     background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #38ffbd, #15c7af), url(/img/pexels-pixabay-414579.jpg); }
+  .card__heading {
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white; }
 
 .composition {
   position: relative; }
