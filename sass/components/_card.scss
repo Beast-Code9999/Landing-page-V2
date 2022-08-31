@@ -88,4 +88,23 @@
             rgba($color-secondary-dark, .85));
         }
     }
+
+    &__details {
+
+        ul {
+            list-style: none;
+            width: 80%;
+            
+            li {
+                text-align: center;
+                font-size: 1.4rem;
+                padding: 1rem;
+
+                &:not(:last-child) {
+                    
+                }
+                
+            }
+        }
+    }
 }

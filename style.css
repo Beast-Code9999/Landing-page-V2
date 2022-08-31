@@ -242,6 +242,13 @@ body {
     box-decoration-break: clone; }
     .card__heading-span--1 {
       background-image: linear-gradient(to right, rgba(56, 255, 189, 0.85), rgba(21, 199, 175, 0.85)); }
+  .card__details ul {
+    list-style: none;
+    width: 80%; }
+    .card__details ul li {
+      text-align: center;
+      font-size: 1.4rem;
+      padding: 1rem; }
 
 .composition {
   position: relative; }
