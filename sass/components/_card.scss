@@ -69,6 +69,23 @@
         font-weight: 500;
         text-transform: uppercase;
         color: white;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        width: 75%;
+        text-align: right;
 
+    }
+
+    &__heading-span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        &--1 {
+            background-image: linear-gradient(to right,
+            rgba($color-secondary-light, .85),
+            rgba($color-secondary-light, .85));
+        }
     }
 }
