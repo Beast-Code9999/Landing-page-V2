@@ -206,6 +206,7 @@ body {
     width: 100%;
     backface-visibility: hidden;
     border-radius: 5px;
+    overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
     .card__side--front {
       background-color: #fff; }
@@ -221,9 +222,10 @@ body {
   .card__picture {
     background-size: cover;
     height: 25rem;
-    background-blend-mode: screen; }
+    background-blend-mode: screen;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #38ffbd, #15c7af), url(/img/rene-bohmer-YeUVDKZWSZ4-unsplash.jpg); }
+      background-image: linear-gradient(to right bottom, #38ffbd, #15c7af), url(/img/pexels-pixabay-414579.jpg); }
 
 .composition {
   position: relative; }

@@ -23,6 +23,8 @@
         width: 100%;
         backface-visibility: hidden;
         border-radius: 5px;
+        //hide overflow image 
+        overflow: hidden;
         box-shadow: 0 1.5rem 4rem rgba($color: #000000, $alpha: .15);
 
         &--front {
@@ -54,9 +56,10 @@
         background-size: cover;
         height: 25rem;
         background-blend-mode: screen;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         
         &--1 {
-            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark) ,url(/img/rene-bohmer-YeUVDKZWSZ4-unsplash.jpg);
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark) ,url(/img/pexels-pixabay-414579.jpg);
         }
     }
 }
