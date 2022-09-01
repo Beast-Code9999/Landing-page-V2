@@ -39,6 +39,10 @@
             &-1 {
                 background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
             }
+
+            &-2 {
+                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+            }
         }
     }
     
@@ -61,6 +65,10 @@
         
         &--1 {
             background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark) ,url(/img/pexels-pixabay-414579.jpg);
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark) ,url(/img/pexels-scott-webb-1544946.jpg);
         }
     }
 
@@ -86,6 +94,12 @@
             background-image: linear-gradient(to right,
             rgba($color-secondary-light, .85),
             rgba($color-secondary-dark, .85));
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right,
+            rgba($color-primary-light, .85),
+            rgba($color-primary-dark, .85));
         }
     }
 

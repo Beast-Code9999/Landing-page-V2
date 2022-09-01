@@ -214,6 +214,8 @@ body {
       transform: rotateY(180deg); }
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #38ffbd, #15c7af); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #55b3f1, #0076c6); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -226,6 +228,8 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #38ffbd, #15c7af), url(/img/pexels-pixabay-414579.jpg); }
+    .card__picture--2 {
+      background-image: linear-gradient(to right bottom, #55b3f1, #0076c6), url(/img/pexels-scott-webb-1544946.jpg); }
   .card__heading {
     font-size: 3rem;
     font-weight: 500;
@@ -242,6 +246,8 @@ body {
     box-decoration-break: clone; }
     .card__heading-span--1 {
       background-image: linear-gradient(to right, rgba(56, 255, 189, 0.85), rgba(21, 199, 175, 0.85)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right, rgba(85, 179, 241, 0.85), rgba(0, 118, 198, 0.85)); }
   .card__details {
     padding: 3rem; }
     .card__details ul {
