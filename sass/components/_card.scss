@@ -90,10 +90,12 @@
     }
 
     &__details {
+        padding: 3rem;
 
         ul {
             list-style: none;
             width: 80%;
+            margin: 0 auto;
             
             li {
                 text-align: center;
@@ -101,7 +103,7 @@
                 padding: 1rem;
 
                 &:not(:last-child) {
-                    
+                    border-bottom: 1px solid gray;
                 }
                 
             }
