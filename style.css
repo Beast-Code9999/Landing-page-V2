@@ -348,14 +348,17 @@ body {
   background-color: white;
   border-radius: 3px;
   padding: 7rem;
+  padding-left: 9rem;
   font-size: 1.6rem; }
   .review__shape {
     width: 15rem;
     height: 15rem;
-    background-color: black;
     float: left;
     shape-outside: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%); }
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-2rem); }
+  .review__img {
+    height: 100%; }
 
 .row {
   max-width: 114rem;

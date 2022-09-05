@@ -5,13 +5,13 @@
     background-color: white;
     border-radius: 3px;
     padding: 7rem;
+    padding-left: 9rem;
     font-size: $default-font-size;
 
     &__shape {
         // shape-outside also has to have width and height
         width: 15rem;
         height: 15rem;
-        background-color: black;
         // element must be floated to use the shape outside
         float: left;
         // shpae outside property 
@@ -19,5 +19,12 @@
         clip-path: circle(50% at 50% 50%);
         // the best way to deal with distance in element that's floated
         // is not to use margin or padding but rather to use transform
+        transform: translateX(-2rem);
+    }
+    // flexible images ALWAYS need width with NO exception
+    &__img {
+        // width: 100%;  because the width is bigger than the height there is an awkward cut at the bottom
+        height: 100%;
+
     }
 }
