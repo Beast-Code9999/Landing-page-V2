@@ -34,6 +34,14 @@
         }
     }
 
+    &--blue {
+        background-color: $color-primary;
+        color: #fff;
+        &::after {
+            background-color: $color-primary;
+        }
+    }
+
     &::after {
         content: "";
         display: inline-block;
