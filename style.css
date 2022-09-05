@@ -341,6 +341,22 @@ body {
   .feature-box__paragraph {
     font-size: 1.6rem; }
 
+.review {
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 3px;
+  padding: 7rem;
+  font-size: 1.6rem; }
+  .review__shape {
+    width: 15rem;
+    height: 15rem;
+    background-color: black;
+    float: left;
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%); }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
