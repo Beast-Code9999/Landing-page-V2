@@ -7,6 +7,11 @@
     padding: 7rem;
     padding-left: 9rem;
     font-size: $default-font-size;
+    transform: skewX(-12deg);
+
+    // & > * {  // this wouldn't work because transform can only be used once for any elements, therefore apply individually to existing elements
+    //     transform: skewX(12deg);
+    // }
 
     &__shape {
         // shape-outside also has to have width and height
@@ -19,12 +24,15 @@
         clip-path: circle(50% at 50% 50%);
         // the best way to deal with distance in element that's floated
         // is not to use margin or padding but rather to use transform
-        transform: translateX(-2rem);
+        transform: translateX(-2rem) skewX(12deg) //apply skew on existing transform property;
     }
     // flexible images ALWAYS need width with NO exception
     &__img {
         // width: 100%;  because the width is bigger than the height there is an awkward cut at the bottom
         height: 100%;
+    }
 
+    &__text {
+        transform: skewX(12deg); // individually apply skew
     }
 }
