@@ -357,11 +357,21 @@ body {
     float: left;
     shape-outside: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
-    transform: translateX(-2rem) skewX(12deg); }
+    transform: translateX(-2rem) skewX(12deg);
+    position: relative; }
   .review__img {
     height: 100%; }
   .review__text {
     transform: skewX(12deg); }
+  .review__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.7rem; }
 
 .row {
   max-width: 114rem;

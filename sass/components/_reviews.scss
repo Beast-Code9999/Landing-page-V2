@@ -24,7 +24,8 @@
         clip-path: circle(50% at 50% 50%);
         // the best way to deal with distance in element that's floated
         // is not to use margin or padding but rather to use transform
-        transform: translateX(-2rem) skewX(12deg) //apply skew on existing transform property;
+        transform: translateX(-2rem) skewX(12deg); //apply skew on existing transform property;
+        position: relative;
     }
     // flexible images ALWAYS need width with NO exception
     &__img {
@@ -34,5 +35,17 @@
 
     &__text {
         transform: skewX(12deg); // individually apply skew
+    }
+
+    &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1.7rem;
+
     }
 }
