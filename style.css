@@ -471,3 +471,14 @@ body {
 .section-reviews {
   padding: 15rem 0;
   position: relative; }
+
+.section-subscribe {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #55b3f1, #0076c6); }
+
+.subscribe {
+  background-image: url(/img/geometric-gbcaeb6927_1920.jpg);
+  background-size: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1.2rem 5rem rgba(0, 0, 0, 0.2);
+  height: 50rem; }

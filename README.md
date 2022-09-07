@@ -43,3 +43,9 @@ Photo by Scott Webb from Pexels: https://www.pexels.com/photo/gray-metal-frame-l
 
 // video in section review
 I got this free video on Coverr.co https://coverr.co/videos/crystal-clear-sea-water-9gMOqhVnYS?utm_source=coverr&utm_medium=referral&utm_content=creditShareLink
+
+
+// pictures on subscribe section
+Image by "https://pixabay.com/users/sambeetarts-1339110/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1732847" 
+
+- by Sambeet D</a> from "https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1732847"

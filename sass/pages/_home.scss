@@ -31,3 +31,16 @@
     padding: 15rem 0;
     position: relative;
 }
+
+.section-subscribe {
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+}
+
+.subscribe {
+    background-image: url(/img/geometric-gbcaeb6927_1920.jpg);
+    background-size: 100%; //same as background-size: cover;
+    border-radius: $border-radius;
+    box-shadow: 0 1.2rem 5rem rgba($color: #000000, $alpha: .2);
+    height: 50rem;
+}
