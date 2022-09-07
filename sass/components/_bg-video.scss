@@ -6,13 +6,16 @@
     height: 100%;
     z-index: -1;
     opacity: .2;
+    // handy tool to use
+    overflow: hidden;
 
     &__content {
         height: 100%;
         width: 100%;
 
-        // new property that fill the object to fit the parent container while maintaining aspect ratio
+        // new property (object-fit:cover;) that fill the object to fit the parent container while maintaining aspect ratio
         // hence any part of the object that overflows are cut off
+        // unlike image fit, object-fit works with html elements such as video tags, ofcourse the img can work too
         object-fit: cover;
     }
 }
