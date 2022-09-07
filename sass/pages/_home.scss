@@ -37,10 +37,15 @@
     background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
 }
 
-.subscribe {
-    background-image: url(/img/geometric-gbcaeb6927_1920.jpg);
+.subscribe { // a way to use linear-background as a clip-path mimic
+    background-image: linear-gradient(
+        105deg,
+        rgba(white, .6) 0%, 
+        rgba(white, .6) 50%, 
+        transparent 50%) 
+        ,url(/img/geometric-gbcaeb6927_1920.jpg);
     background-size: 100%; //same as background-size: cover;
     border-radius: $border-radius;
-    box-shadow: 0 1.2rem 5rem rgba($color: #000000, $alpha: .2);
+    box-shadow: 0 1.2rem 5rem rgba($color: #000000, $alpha: .4);
     height: 50rem;
 }
