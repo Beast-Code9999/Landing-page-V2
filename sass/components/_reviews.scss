@@ -60,5 +60,6 @@
 
     &:hover &__img{
         transform: scale(1);
+        filter: blur(2px) brightness(80%);
     }
 }

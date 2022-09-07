@@ -381,7 +381,8 @@ body {
     opacity: 1;
     transform: translate(-50%, -50%); }
   .review:hover .review__img {
-    transform: scale(1); }
+    transform: scale(1);
+    filter: blur(2px) brightness(80%); }
 
 .row {
   max-width: 114rem;
