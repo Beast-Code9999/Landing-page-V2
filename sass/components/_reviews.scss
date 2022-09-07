@@ -31,6 +31,8 @@
     &__img {
         // width: 100%;  because the width is bigger than the height there is an awkward cut at the bottom
         height: 100%;
+        transform: scale(1.4);
+        transition: all .5s;
     }
 
     &__text {
@@ -41,11 +43,22 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, 20%);
         color: white;
         text-transform: uppercase;
         text-align: center;
         font-size: 1.7rem;
+        opacity: 0;
+        transition: all .5s;
+        backface-visibility: hidden;
+    }
 
+    &:hover &__caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover &__img{
+        transform: scale(1);
     }
 }
