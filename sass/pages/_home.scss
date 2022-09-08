@@ -40,8 +40,8 @@
 .subscribe { // a way to use linear-background as a clip-path mimic
     background-image: linear-gradient(
         105deg,
-        rgba(white, .6) 0%, 
-        rgba(white, .6) 50%, 
+        rgba(white, .8) 0%, 
+        rgba(white, .8) 50%, 
         transparent 50%) 
         ,url(/img/geometric-gbcaeb6927_1920.jpg);
     background-size: 100%; //same as background-size: cover;
@@ -52,6 +52,5 @@
     &__form {
         width: 50%;
         padding: 6rem;
-        background-color: lightblue;
     }
 }

@@ -15,6 +15,7 @@
         // to avoid border-bottom shifting its size, add the border on its initial state and set it to transparent
         border-bottom: 4px solid transparent;
         width: 90%;
+        transition: all .3s;
 
         &::-webkit-input-placeholder, &::-moz-placeholder {
             color: $color-gray-dark-2;
