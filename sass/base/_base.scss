@@ -3,7 +3,6 @@
 *::before {
     margin: 0;
     padding: 0;
-    user-select: none;
     box-sizing: inherit;
 }
 
@@ -14,4 +13,9 @@ html {
 
 body {
     box-sizing: border-box;
+}
+
+*::selection {
+    background-color: $color-secondary-dark;
+    color: white;
 }

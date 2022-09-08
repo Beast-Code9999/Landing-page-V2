@@ -3,7 +3,6 @@
 *::before {
   margin: 0;
   padding: 0;
-  user-select: none;
   box-sizing: inherit; }
 
 html {
@@ -11,6 +10,10 @@ html {
 
 body {
   box-sizing: border-box; }
+
+*::selection {
+  background-color: #15c7af;
+  color: white; }
 
 /* rotating logo */
 @keyframes rotateLogo {
