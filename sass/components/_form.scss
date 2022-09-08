@@ -43,7 +43,7 @@
     &__input:placeholder-shown + &__label { // use ~ for general sibling selector
         opacity: 0;
         visibility: hidden; // the reason to use opacity is because we want to animate it, and visibility cannot be animated
-
+        transform: translateY(-4rem);
     }
 
     
