@@ -382,7 +382,12 @@ body {
   font-weight: 700;
   margin-left: 2rem;
   margin-top: .7rem;
-  display: block; }
+  display: block;
+  transition: all .3s; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden; }
 
 .review {
   width: 80%;
