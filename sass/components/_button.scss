@@ -1,18 +1,23 @@
 .btn {
+    &,
     &:link,
     &:visited {
         text-transform: uppercase;
         text-decoration: none;
-        padding: 2rem 4rem;
+        padding: 1.5rem 3rem;
         display: inline-block;
         border-radius: 50px;
         transition: all .1s;
         position: relative;
         font-size: 2rem;
 
+        // for button in subscribe section
+        border: none;
+        cursor: pointer;
     }
 
     &:hover {
+        cursor: pointer;
         transform: translateY(-3px);
         box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
         &::after {
@@ -21,7 +26,9 @@
         }
     }
 
-    &:active {
+    &:active,
+    &:focus {
+        outline: none;
         transform: translateY(-1px);
         box-shadow: 0 5px 10px rgba(0, 0, 0, .15);
     }
