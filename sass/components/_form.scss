@@ -39,6 +39,7 @@
         margin-top: .7rem;
         display: block;
         transition: all .3s;
+        user-select: none;
     }
 
     &__input:placeholder-shown + &__label { // use ~ for general sibling selector
@@ -63,6 +64,7 @@
         cursor: pointer;
         position: relative;
         padding-left: 4rem;
+        user-select: none;
     }
 
     &__radio-button {

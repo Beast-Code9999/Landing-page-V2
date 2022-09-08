@@ -391,7 +391,8 @@ body {
   margin-left: 2rem;
   margin-top: .7rem;
   display: block;
-  transition: all .3s; }
+  transition: all .3s;
+  user-select: none; }
 
 .form__input:placeholder-shown + .form__label {
   opacity: 0;
@@ -410,7 +411,8 @@ body {
   font-weight: 600;
   cursor: pointer;
   position: relative;
-  padding-left: 4rem; }
+  padding-left: 4rem;
+  user-select: none; }
 
 .form__radio-button {
   height: 3rem;
