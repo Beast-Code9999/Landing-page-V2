@@ -47,5 +47,35 @@
         transform: translateY(-4rem);
     }
 
-    
+    &__radio-group {
+        width: 30%;
+        display: inline-block;
+    }
+
+    &__radio-label {
+        font-size: 1.3rem;
+        cursor: pointer;
+        position: relative;
+        padding-left: 3rem;
+    }
+
+    &__radio-button {
+        height: 2rem;
+        width: 2rem;
+        border: 5px solid $color-primary;
+        border-radius: 50%;
+        // in order for it to work turn this into a block element
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        &::after {
+            content: "";
+            display: block;
+            height: 1rem;
+            width: 1rem;
+            border-radius: 50%;
+        }
+    }
 }
