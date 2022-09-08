@@ -589,21 +589,40 @@ body {
   top: 6.5rem;
   right: 6.5rem;
   background-image: radial-gradient(#55b3f1, #0076c6);
-  z-index: 1000; }
+  z-index: 1000;
+  transform: scale(60); }
 
 .navigation__nav {
   height: 100vh;
   width: 100%;
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 1001; }
 
 .navigation__list {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: -50%, -50%; }
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center; }
+
+.navigation__item {
+  margin: 1rem; }
+
+.navigation__link:link, .navigation__link:visited {
+  font-size: 3rem;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  background-image: linear-gradient(105deg, transparent 0%, transparent 50%, white 50%);
+  background-size: 220%;
+  transition: all .3s; }
+
+.navigation__link:hover, .navigation__link:active {
+  background-position: 100%; }
 
 .section-about {
   background-color: #f7f7f7;
