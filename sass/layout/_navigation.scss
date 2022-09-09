@@ -13,6 +13,8 @@
         right: 6rem;
         border-radius: 50%;
         z-index: 2000;
+
+        box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: .2);
     }
 
     &__background {
@@ -25,16 +27,19 @@
         background-image: radial-gradient($color-primary-light, $color-primary-dark);
         z-index: 1000;
 
-        transform: scale(60)
+        // transform: scale(60)
     }
 
     &__nav {
         height: 100vh;
-        width: 100%;
+        // width: 100%;
         position: fixed;
         top: 0;
         right: 0;
         z-index: 1001;
+
+        width: 0;
+        opacity: 0;
     }
 
     &__list {
@@ -49,8 +54,6 @@
     &__item {
         margin: 1rem;
     }
-
-
 
     &__link {
         &:link,
@@ -79,4 +82,6 @@
             transform: translateX(1rem) scale(1.05);
         }
     }
+
+    
 }

@@ -579,7 +579,8 @@ body {
   top: 6rem;
   right: 6rem;
   border-radius: 50%;
-  z-index: 2000; }
+  z-index: 2000;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .navigation__background {
   height: 6rem;
@@ -589,16 +590,16 @@ body {
   top: 6.5rem;
   right: 6.5rem;
   background-image: radial-gradient(#55b3f1, #0076c6);
-  z-index: 1000;
-  transform: scale(60); }
+  z-index: 1000; }
 
 .navigation__nav {
   height: 100vh;
-  width: 100%;
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 1001; }
+  z-index: 1001;
+  width: 0;
+  opacity: 0; }
 
 .navigation__list {
   position: absolute;
