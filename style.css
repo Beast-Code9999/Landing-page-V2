@@ -454,15 +454,19 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
-    height: 50rem;
     background-color: white;
     border-radius: 3px;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.9); }
   .popup__left-container {
     height: 100%;
-    width: auto; }
+    width: 33.333%;
+    float: left; }
   .popup__img {
-    height: 100%; }
+    dislay: block;
+    width: 100%; }
+  .popup__right-container {
+    float: left;
+    width: 66.666%; }
 
 .review {
   width: 80%;
