@@ -456,7 +456,13 @@ body {
     width: 80%;
     height: 50rem;
     background-color: white;
+    border-radius: 3px;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.9); }
+  .popup__left-container {
+    height: 100%;
+    width: auto; }
+  .popup__img {
+    height: 100%; }
 
 .review {
   width: 80%;
