@@ -39,9 +39,14 @@
         font-size: $default-font-size;
         margin-bottom: 4rem;
 
-        column-count: 2;
+        column-count: 3;
         column-gap: 4rem;
         column-rule: 1px solid rgb(223, 223, 223);
+
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        -webkit-hyphens: auto;
+        hyphens: auto;
     }
 
 }
