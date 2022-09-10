@@ -11,6 +11,30 @@
     opacity: 0;
     visibility: hidden;
 
+    // target pseudo class to show popup when $popup is the target
+    &:target {
+        visibility: visible;
+        opacity: 1;
+    } // css won't apply when #popup is no longer the target
+
+    &__close {
+        &:link,
+        &:visited {
+            font-size: 3rem;
+            color: $color-gray-dark-2;
+            position: absolute;
+            top: 2.5rem;
+            right: 2.5rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: all .2s;
+        }
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
     &__content {
         @include absoluteCenter;
         width: 80%;
