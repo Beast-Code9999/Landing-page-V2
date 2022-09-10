@@ -454,18 +454,25 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
-    height: 50rem;
     background-color: white;
     border-radius: 3px;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.9);
-    display: flex; }
+    display: table;
+    overflow: hidden; }
   .popup__left-container {
-    width: auto;
-    height: 100%; }
+    width: 33.3333%;
+    display: table-cell; }
   .popup__img {
-    height: 100%; }
+    display: block;
+    width: 100%; }
   .popup__right-container {
-    width: auto; }
+    width: 66.6666%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem; }
+  .popup__text {
+    font-size: 1.6rem;
+    margin-bottom: 4rem; }
 
 .review {
   width: 80%;
