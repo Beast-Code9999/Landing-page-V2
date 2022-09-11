@@ -26,18 +26,19 @@
 //     @media (max-width: 600px) { @content }
 // }
 
+// em is best for media queries
 @mixin responsive($breakpoint) {
     @if $breakpoint == phone {
-        @media (max-width: 600px) { @content };
+        @media (max-width: 37.5em) { @content };
     }
 
     @if $breakpoint == tab-port {
-        @media (max-width: 900px) { @content };
+        @media (max-width: 50.25em) { @content };
     }
     @if $breakpoint == tab-land {
-        @media (max-width: 1200px) { @content };
+        @media (max-width: 75em) { @content };
     }
     @if $breakpoint == big-desktop {
-        @media (min-width: 1800px) { @content };
+        @media (min-width: 112.5em) { @content };
     }
 }
