@@ -22,9 +22,12 @@
 - 1888+ big desktop
 */
 
-@mixin responsive-phone {
-    @media (max-width: 600px) {
-        @content
+// @mixin responsive-phone {
+//     @media (max-width: 600px) { @content }
+// }
+
+@mixin responsive($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 600px) { @content }
     }
 }
-
