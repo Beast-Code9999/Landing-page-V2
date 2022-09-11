@@ -13,3 +13,18 @@
     left: 50%;
     transform: translate(-50%, -50%); 
 }
+
+// meadia query 
+/* 
+- 0 to 600px is mobile phone 
+- 600-900px is tablet portrait
+- 900-1299px is tablet landscape
+- 1888+ big desktop
+*/
+
+@mixin responsive-phone {
+    @media (max-width: 600px) {
+        @content
+    }
+}
+

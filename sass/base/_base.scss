@@ -9,6 +9,11 @@
 html {
     // degines what 1 rem is e.g. 100% generally means 1ram = 16px
     font-size: 62.5%;
+
+    //media query
+    @include responsive-phone {
+        font-size: 50%;
+    }
 }
 
 body {
