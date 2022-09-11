@@ -18,7 +18,7 @@
 /* 
 - 0 to 600px is mobile phone 
 - 600-900px is tablet portrait
-- 900-1299px is tablet landscape
+- 900-1200px is tablet landscape
 - 1888+ big desktop
 */
 
@@ -28,6 +28,16 @@
 
 @mixin responsive($breakpoint) {
     @if $breakpoint == phone {
-        @media (max-width: 600px) { @content }
+        @media (max-width: 600px) { @content };
+    }
+
+    @if $breakpoint == tab-port {
+        @media (max-width: 900px) { @content };
+    }
+    @if $breakpoint == tab-land {
+        @media (max-width: 1200px) { @content };
+    }
+    @if $breakpoint == big-desktop {
+        @media (min-width: 1800px) { @content };
     }
 }
