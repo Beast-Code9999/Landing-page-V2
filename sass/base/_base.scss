@@ -11,14 +11,14 @@ html {
     font-size: 62.5%; // this is 10px per 1rem
 
     //media query
-    // @include responsive(phone) {
-    //     font-size: 50%;
-    // }
     @include responsive(tab-land) {
         font-size: 56.25%; // 1 rem = 9px,  9/16 = 56.25% 
     }
     @include responsive(tab-port) {
         font-size: 50%; // 1 rem = 9px,  9/16 = 56.25% 
+    }
+    @include responsive(phone) {
+        font-size: 40%;
     }
     @include responsive(big-desktop) {
         font-size: 75%; // 1rem = 12px, 12px/16px = 75%
