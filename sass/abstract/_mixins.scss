@@ -26,6 +26,8 @@
 //     @media (max-width: 600px) { @content }
 // }
 
+// order of media edit: base + typography > general layout + grid > page layout > componenets
+
 // em is best for media queries
 @mixin responsive($breakpoint) {
     @if $breakpoint == phone {

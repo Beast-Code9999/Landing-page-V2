@@ -27,7 +27,11 @@ html {
       font-size: 75%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 3rem; }
+  @media (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 *::selection {
   background-color: #15c7af;
@@ -81,8 +85,7 @@ body {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5;
-  color: #777;
-  padding: 3rem; }
+  color: #777; }
 
 .heading-primary {
   color: #fff;
