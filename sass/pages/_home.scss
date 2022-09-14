@@ -67,10 +67,37 @@
     background-size: 100%; //same as background-size: cover;
     border-radius: $border-radius;
     box-shadow: 0 1.2rem 5rem rgba($color: #000000, $alpha: .4);
-    height: 55rem;
+
+    @include responsive( tab-land ) {
+        background-image: linear-gradient(
+            105deg,
+            rgba(white, .8) 0%, 
+            rgba(white, .8) 65%, 
+            transparent 65%) 
+            ,url(/img/geometric-gbcaeb6927_1920.jpg);
+            // background-size: 100% on x direction hence change to to y
+            background-size: cover;
+    }
+
+    @include responsive(tab-port) {
+        background-image: linear-gradient(
+            to right,
+            rgba(white, .8) 0%, 
+            rgba(white, .8) 100%) 
+            ,url(/img/geometric-gbcaeb6927_1920.jpg); 
+    }
 
     &__form {
-        width: 50%;
+        width: 65%;
         padding: 6rem;
+
+        @include responsive( tab-land ) {
+            width: 70%;
+        }
+
+
+        @include responsive( tab-port ) {
+            width: 100%;
+        }
     }
 }

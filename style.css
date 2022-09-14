@@ -494,6 +494,10 @@ body {
 .form__radio-group {
   width: 30%;
   display: inline-block; }
+  @media (max-width: 56.25em) {
+    .form__radio-group {
+      width: 100%;
+      margin-bottom: 3rem; } }
 
 .form__radio-input {
   display: none; }
@@ -945,8 +949,20 @@ body {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url(/img/geometric-gbcaeb6927_1920.jpg);
   background-size: 100%;
   border-radius: 3px;
-  box-shadow: 0 1.2rem 5rem rgba(0, 0, 0, 0.4);
-  height: 55rem; }
+  box-shadow: 0 1.2rem 5rem rgba(0, 0, 0, 0.4); }
+  @media (max-width: 75em) {
+    .subscribe {
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 65%, transparent 65%), url(/img/geometric-gbcaeb6927_1920.jpg);
+      background-size: cover; } }
+  @media (max-width: 56.25em) {
+    .subscribe {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), url(/img/geometric-gbcaeb6927_1920.jpg); } }
   .subscribe__form {
-    width: 50%;
+    width: 65%;
     padding: 6rem; }
+    @media (max-width: 75em) {
+      .subscribe__form {
+        width: 70%; } }
+    @media (max-width: 56.25em) {
+      .subscribe__form {
+        width: 100%; } }
