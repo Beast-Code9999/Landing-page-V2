@@ -356,6 +356,31 @@ body {
       font-size: 3rem;
       font-weight: 100;
       margin-bottom: 1rem; }
+  @media (max-width: 56.25em) {
+    .card {
+      height: auto; }
+      .card__side {
+        height: auto;
+        position: relative;
+        border-radius: 5px; }
+        .card__side--back {
+          background-color: green;
+          transform: rotateY(0); }
+      .card:hover .card__side--front {
+        transform: rotateY(0); }
+      .card__cta {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0);
+        width: 100%;
+        text-align: center; }
+      .card__top-heading {
+        margin-bottom: 8rem; }
+        .card__top-heading-content--1 {
+          font-size: 1.4rem; }
+        .card__top-heading-content--2 {
+          font-size: 3rem; } }
 
 .composition {
   position: relative; }
