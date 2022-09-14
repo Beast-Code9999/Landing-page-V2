@@ -105,6 +105,10 @@ body {
     /* animation-delay: 2s
             animation-count: 2;
          */ }
+    @media (max-width: 37.5em) {
+      .heading-primary--main {
+        letter-spacing: 1rem;
+        font-size: 4.7rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
@@ -114,6 +118,9 @@ body {
         animation-duration: 1s;
         animation-timing-function: ease-out; */
     animation: moveInRight 1s ease-out; }
+    @media (max-width: 37.5em) {
+      .heading-primary--sub {
+        letter-spacing: .5rem; } }
 
 .heading-secondary {
   font-size: 4rem;
@@ -125,6 +132,12 @@ body {
   color: transparent;
   letter-spacing: 1px;
   transition: all .3s; }
+  @media (max-width: 56.25em) {
+    .heading-secondary {
+      font-size: 3.5rem; } }
+  @media (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 3rem; } }
   .heading-secondary:hover {
     transform: skewY(6deg) skewX(20deg) scale(1.1);
     text-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2); }
