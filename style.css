@@ -606,6 +606,14 @@ body {
   padding-left: 9rem;
   font-size: 1.6rem;
   transform: skewX(-12deg); }
+  @media (max-width: 56.25em) {
+    .review {
+      width: 100%;
+      padding: 4rem;
+      padding-left: 7rem; } }
+  @media (max-width: 37.5em) {
+    .review {
+      transform: skewX(0); } }
   .review__shape {
     width: 15rem;
     height: 15rem;
@@ -614,12 +622,18 @@ body {
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-2rem) skewX(12deg);
     position: relative; }
+    @media (max-width: 37.5em) {
+      .review__shape {
+        transform: skewX(0); } }
   .review__img {
     height: 100%;
     transform: scale(1.4);
     transition: all .5s; }
   .review__text {
     transform: skewX(12deg); }
+    @media (max-width: 37.5em) {
+      .review__text {
+        transform: skewX(0); } }
   .review__caption {
     position: absolute;
     top: 50%;
