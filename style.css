@@ -411,6 +411,9 @@ body {
   border-radius: 3px;
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
   transition: transform .1s; }
+  @media (max-width: 56.25em) {
+    .feature-box {
+      padding: 2rem; } }
   .feature-box:hover {
     transform: translateY(-2rem) scale(1.05); }
   .feature-box__icon {
@@ -871,7 +874,7 @@ body {
     transform: skewY(7deg); }
   @media (max-width: 56.25em) {
     .section-features {
-      padding: 20rem 0; } }
+      padding: 15rem 0; } }
 
 .section-tours {
   background-color: #f7f7f7;

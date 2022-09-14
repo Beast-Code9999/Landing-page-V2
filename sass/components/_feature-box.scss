@@ -6,6 +6,10 @@
     border-radius: 3px;
     box-shadow: 0 2rem 4rem rgba($color: #000000, $alpha: .2);
     transition: transform .1s;
+
+    @include responsive( tab-port ) {
+        padding: 2rem;
+    }
     
     &:hover {
         transform: translateY(-2rem) scale(1.05);
