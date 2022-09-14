@@ -17,6 +17,16 @@
         cursor: pointer;
 
         box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: .2);
+
+        @include responsive(tab-port) {
+            top: 4rem;
+            right: 4rem;
+        }
+
+        @include responsive(phone) {
+            top: 3rem;
+            right: 3rem;
+        }
     }
 
     &__background {
@@ -31,6 +41,16 @@
         transition: transform .3s cubic-bezier(0.83, 0, 0.17, 1);
 
         // transform: scale(60)
+
+        @include responsive(tab-port) {
+            top: 4.5rem;
+            right: 4.5rem;
+        }
+
+        @include responsive(phone) {
+            top: 3.5rem;
+            right: 3.5rem;
+        }
     }
 
     &__nav {
