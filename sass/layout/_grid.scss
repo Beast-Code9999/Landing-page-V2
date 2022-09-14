@@ -4,6 +4,16 @@
     // select everything except the last child using not() pseudo class
     &:not(:last-child) {
         margin-bottom: $gap-horizontal;
+
+        @include responsive(tab-port) {
+            margin-bottom: 6rem;
+            
+        }
+    }
+
+    @include responsive(tab-port) {
+        max-width: 50rem;
+        
     }
     
     //use attribute selector to select all classes that start with "col-"
@@ -11,6 +21,13 @@
         float: left;
         &:not(:last-child) {
             margin-right: $gap-horizontal;
+        }
+
+        @include responsive(tab-port) {
+            width: 100% !important;
+            margin-right: 0;
+            margin-bottom: 6rem;
+
         }
     }
 
