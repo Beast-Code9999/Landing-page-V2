@@ -1,10 +1,19 @@
 .footer {
     background-color: #444;
     padding: 10rem;
+    font-size: 1.6rem;
+
+    @include responsive(tab-port) {
+        padding: 8rem;
+    }
 
     &__logo-box {
         text-align: center;
         margin-bottom: 8rem;
+
+        @include responsive(tab-port) {
+            margin-bottom: 6rem;
+        }
     }
 
     &__logo {
@@ -16,6 +25,11 @@
         padding: 3rem;
         border-top: 1px solid $color-gray-dark;
         display: inline-block;
+
+        @include responsive(tab-port) {
+            width: 100%;
+            text-align: center;
+        }
     }
 
     &__list {
@@ -54,5 +68,11 @@
         display: inline-block;
         width: 80%;
         float: right;
+
+        @include responsive(tab-port) {
+            width: 100%;
+            float: none;
+            text-align: center;
+        }
     }
 }
