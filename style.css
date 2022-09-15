@@ -946,7 +946,7 @@ body {
       padding: 10rem 0; } }
 
 .subscribe {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url(/img/geometric-gbcaeb6927_1920.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 60%, transparent 60%), url(/img/geometric-gbcaeb6927_1920.jpg);
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1.2rem 5rem rgba(0, 0, 0, 0.4); }
