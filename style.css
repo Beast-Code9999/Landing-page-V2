@@ -711,6 +711,23 @@ body {
         width: 100%;
         float: none;
         text-align: center; } }
+  .footer__github {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    font-size: 25px;
+    color: white; }
+    .footer__github a {
+      text-decoration: none;
+      color: white; }
+    .footer__github img {
+      width: 25px;
+      height: auto;
+      transition: transform .7s ease-in-out;
+      margin-left: 5px; }
+    .footer__github img:hover {
+      transition: all 0.5s ease-in-out;
+      transform: rotate(360deg) scale(1.5); }
 
 .row {
   max-width: 114rem;
