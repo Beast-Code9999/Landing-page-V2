@@ -676,7 +676,8 @@ body {
   .footer__navigation {
     padding: 3rem;
     border-top: 1px solid #777;
-    display: inline-block; }
+    display: inline-block;
+    text-align: center; }
     @media (max-width: 56.25em) {
       .footer__navigation {
         width: 100%;
@@ -703,7 +704,8 @@ body {
     border-top: 1px solid #777;
     display: inline-block;
     width: 80%;
-    float: right; }
+    float: right;
+    text-align: center; }
     @media (max-width: 56.25em) {
       .footer__copyright {
         width: 100%;

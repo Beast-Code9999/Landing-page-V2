@@ -25,6 +25,7 @@
         padding: 3rem;
         border-top: 1px solid $color-gray-dark;
         display: inline-block;
+        text-align: center;
 
         @include responsive(tab-port) {
             width: 100%;
@@ -68,6 +69,7 @@
         display: inline-block;
         width: 80%;
         float: right;
+        text-align: center;
 
         @include responsive(tab-port) {
             width: 100%;
