@@ -1,6 +1,9 @@
 # Landing-page-V2
 Programming in TS
 
+Dates:
+  - September 2022: date created
+
 photos credits: 
 
 header 
